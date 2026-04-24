@@ -10,7 +10,7 @@ fn main() {
         .expect("Failed to read line");
 
     while user_input.trim() == "yes" {
-        println!("Do you want to add anything else?");
+        println!("Do you you want to add anything else?");
         
         user_input.clear();
 
