@@ -1,7 +1,27 @@
 use std::fs;
+use std::io;
+use std::collections::HashMap;
+
+
 fn main(){
-    write_to_file();
-    read_file();
+    let mut user_input = String::new();
+
+    println!("Do you want to add anything to your list yes or no?");
+
+    io::stdin()
+        .read_line(&mut user_input)
+        .expect("Failed to read line");
+    while user_input.trim() == "yes" {
+    println!("please type your next entry, If Done type done!");
+    user_input.clear();
+        io::stdin()
+        .read_line(&mut user_input)
+        .expect("Failed to read line");
+    if user_input.trim() == "done" {
+        println!("Done adding!");
+        break;
+        }
+    }
 }
 
 
