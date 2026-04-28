@@ -5,6 +5,7 @@ use std::collections::HashMap;
 
 fn main(){
     let mut user_input = String::new();
+    let mut entries: HashMap<i32, string> = HashMap::new();
 
     println!("Do you want to add anything to your list yes or no?");
 
